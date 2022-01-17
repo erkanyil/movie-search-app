@@ -1,0 +1,1 @@
+var messages = ["Movie not found! Try submitting again."];

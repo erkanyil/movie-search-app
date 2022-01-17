@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">  
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"  >
+    <title>My Movie Search App</title>
+</head>
+<body>
+    
+    <header class="text-center p-4">
+        <h1>Movie Search Database</h1> 
+        <h4 class="text-info">Easy way to search a movie you may like</h4>
+    </header>
+    <div id="search-form" class="d-flex justify-content-center">
+        <form>
+            <fieldset>
+                <div class="form-group" style="width: 405px">
+                    
+                    <div class="form-group row">
+                        <div class= "col-xs-8">
+                            <label for="title">Title</label>
+                            <input type="text" class="form-control " id="title" placeholder="Enter title" >
+                        </div>
+                        <div class= "col-xs-4">
+                            <label for="year">Year (optional)</label>
+                            <input type="text" class="form-control" id="year" placeholder="Enter year">
+                        </div>
+                    </div>
+
+                    <button id="search" type="button" class="btn btn-primary">Search</button>
+                    <button id="reset" type="button" class="btn btn-secondary">Reset</button>
+                    
+                </div>
+            </fieldset>
+        </form>    
+    </div>
+    
+    <div id="movie-list-result"></div>
+    <div id="pagination" class="d-flex justify-content-center">
+        
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://bootswatch.com/_vendor/popper.js/dist/umd/popper.min.js"></script>
+    <script src="https://bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://bootswatch.com/_assets/js/custom.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/messages.js"></script>
+    
+</body>
+</html>
